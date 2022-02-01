@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Analog clock</title>
+	<!-- ALL CSS FILES  -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+    <H1 class="text-center my-3 btn-primary">Analog clock</H1>
+	<div class="clock shadow">
+        <div class="h"></div>
+        <div class="m"></div>
+        <div class="s"></div>
+    </div>
+	
+	<H1 class="text-center my-5 btn-primary">Calculator</H1>
+	<div class="cal shadow">
+		<div class="monitor">
+			<div class="top-monitor">0</div>
+			<div class="main-monitor"></div>
+		</div>
+		<div class="buttons">
+			<button class="bg-warning" style="width: 50%;" onclick="allclear()">AC</button>
+			<button class="bg-warning" style="width: 50%;" onclick="back()">C</button>
+			<button class="bg-success" onclick="valGet(7)">7</button>
+			<button class="bg-success" onclick="valGet(8)">8</button>
+			<button class="bg-success" onclick="valGet(9)">9</button>
+			<button class="bg-warning" onclick="valGet('/')">/</button>
+			<button class="bg-success" onclick="valGet(4)">4</button>
+			<button class="bg-success" onclick="valGet(5)">5</button>
+			<button class="bg-success" onclick="valGet(6)">6</button>
+			<button class="bg-warning" onclick="valGet('*')">*</button>
+			<button class="bg-success" onclick="valGet(1)">1</button>
+			<button class="bg-success" onclick="valGet(2)">2</button>
+			<button class="bg-success" onclick="valGet(3)">3</button>
+			<button class="bg-warning" onclick="valGet('+')">+</button>
+			<button class="bg-warning" onclick="valGet(0)">0</button>
+			<button class="bg-warning" onclick="valGet('.')">.</button>
+			<button class="bg-warning" onclick="finalRes('=')">=</button>
+			<button class="bg-warning" onclick="valGet('-')">-</button>
+		</div>
+	</div>
+
+
+	<H1 class="text-center my-5 btn-primary">Instant data with checkbox</H1>
+	<div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="card my-5">
+                    <div class="card-body">
+                        <input type="checkbox" class="skill" value="PHP" id="PHP"> <label for="PHP">PHP</label> <br>
+                        <input type="checkbox" class="skill" value="HTML" id="HTML"> <label for="HTML">HTML</label> <br>
+                        <input type="checkbox" class="skill" value="PITHON" id="PITHON"> <label for="PITHON">PITHON</label> <br>
+                        <input type="checkbox" class="skill" value="CSS" id="CSS"> <label for="CSS">CSS</label> <br>
+                        <input type="checkbox" class="skill" value="golang" id="golang"> <label for="golang">golang</label> <br>
+                        <input type="checkbox" class="skill" value="WORDPRESS" id="WORDPRESS"> <label for="WORDPRESS">WORDPRESS</label> <br>
+                        <input type="checkbox" class="skill" value="Larabel" id="Larabel"> <label for="Larabel">Larabel</label> <br>
+                        <input type="checkbox" class="skill" value="Androit" id="Androit"> <label for="Androit">Androit</label> <br>
+                    
+                    <ul class="list-group all-skills">
+                        
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- JS FILES  -->
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="./functions.js"></script>
+	<script src="./app.js"></script>
+</body>
+</html>
